@@ -40,12 +40,11 @@
 
         MacOs {
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
-
+            // | ESC |  1  |  2  |  3  |  4  |  5  |               |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U  |  I  |  O  |  P  |  -   |
+            // |CTRL |  A  |  S  |  D  |  F  |  G  |               |  H  |  J  |  K  |  L  |  ;  |  '   |
+            // |SHIFT|  Z  |  X  |  C  |  V  |  B  | [     |  ]     |  N  |  M  |  ,  |  .  |  /  |SHIFT|
+            //                   | ALT | GUI | LOWER | SPACE | RET | RAISE | BSPC | GUI |
             display-name = "Macos";
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
@@ -57,6 +56,12 @@
         };
 
         Windows {
+            // ------------------------------------------------------------------------------------------------------------
+            // | ESC |  1  |  2  |  3  |  4  |  5  |               |  6  |  7  |  8  |  9  |  0  | BSPC |
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |               |  Y  |  U  |  I  |  O  |  P  |  -   |
+            // |CTRL |  A  |  S  |  D  |  F  |  G  |               |  H  |  J  |  K  |  L  |  ;  |  '   |
+            // |SHIFT|  Z  |  X  |  C  |  V  |  B  | [     |  ]     |  N  |  M  |  ,  |  .  |  /  |SHIFT|
+            //                   | GUI | ALT | LOWER | SPACE | RET | RAISE | BSPC | GUI |
             display-name = "Windows";
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
@@ -69,12 +74,11 @@
 
         lower_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
+            // | BTCLR | BT1 | BT2 | BT3 | BT4 | BT5 |               |PREV|PLAY |NEXT | VOL-| VOL+| DEL |
+            // |  F1   | F2  | F3  | F4  | F5  | F6  |               | F7 | F8  | F9  | F10 | F11 |  =  |
+            // |  `    |  !  |  @  |  #  |  $  |  %  |               |  ^ |  &  |  *  | (   | )   |  ~  |
+            // |       |     |     |     |     |     |        |       |     |  _  |  +  | {   | }   |  |  |
+            //                    |      |      |      |        |SPC |      |      |      |            display-name = "Lower";
             display-name = "Lower";
             bindings = <
 &none      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &kp C_PREVIOUS  &kp C_PLAY      &kp C_NEXT       &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp DEL
@@ -87,12 +91,11 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-            // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-            //                     |      |      |      |        |  |       |      |       |       |
-
+            // |     |     |     |     |     |     |               |     |     |     |     |     |      |
+            // |  `  |  1  |  2  |  3  |  4  |  5  |               |  6  |  7  |  8  |  9  |  0  |      |
+            // | F1  | F2  | F3  | F4  | F5  | F6  |               | <-  |  ↓  |  ↑  |  -> |     |      |
+            // | F7  | F8  | F9  |F10  |F11  |F12  |        |       |  +  |  -  |  =  | [   | ]   |  \  |
+            //                    |     |     |      |      |      |      |      |      |
             display-name = "Raise";
             bindings = <
 &trans     &trans  &trans  &trans   &trans   &trans                     &trans       &trans          &trans        &trans           &trans    &trans
@@ -104,6 +107,13 @@
         };
 
         Dev {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  ->  |  =>  |     |     |     |     |               |     |     |     |     |     |     |
+            // |      |      | ↑   |      |     |     |               |     |     |     |     |     |     |
+            // |      | ←    | ↓   | →    |     |     |               |     |     |     |     |     |     |
+            // |      |      |     |      |     |     |        |       |     |     |     |     |     |     |
+            //                    |      |      |      |      |      |      |      |      |
+            display-name = "Dev";
             bindings = <
 &arrow  &equalsarrow    &trans          &trans           &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -112,7 +122,6 @@
                                         &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
-            label = "Dev";
         };
     };
 };
