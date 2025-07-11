@@ -122,7 +122,7 @@
             bindings = <
 &arrow  &equalsarrow    &trans          &trans           &trans  &trans                       &trans    &trans        &trans        &trans     &trans  &trans
 &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans                       &arrow    &equalsarrow  &trans        &trans     &trans  &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans                       &kt LEFT  &kt DOWN      &kt UP_ARROW  &kt RIGHT  &trans  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans                       &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans          &trans          &trans           &trans  &trans  &trans       &trans  &trans    &trans        &trans        &trans     &trans  &trans
                                         &trans           &trans  &trans  &mkp LCLK    &trans  &trans    &trans        &trans
             >;
