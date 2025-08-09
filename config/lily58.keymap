@@ -17,6 +17,11 @@
             bindings = <&tog 1>;
             key-positions = <52 55>;
         };
+
+        gaming_trigger {
+            bindings = <&tog 2>;
+            key-positions = <0 11>;
+        };
     };
 
     macros {
@@ -49,10 +54,10 @@
             display-name = "Macos";
             bindings = <
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&lt 4 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
+&lt 5 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_CONTROL  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &mo 2   &kp SPACE    &kp RET   &mo 3   &mo 4   &kp RGUI
+                                  &kp LALT  &kp LGUI  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &kp RGUI
             >;
         };
 
@@ -66,11 +71,22 @@
 
             display-name = "Windows";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                         &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB           &kp Q   &kp W   &kp E         &kp R         &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D         &kp F         &kp G                          &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z   &kp X   &kp C         &kp V         &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LEFT_GUI  &kp LEFT_ALT  &mo 2   &kp SPACE    &kp RET   &mo 3   &mo 4   &kp RGUI
+&kp ESC           &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                         &kp N6  &kp N7  &kp N8         &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB           &kp Q   &kp W   &kp E         &kp R         &kp T                          &kp Y   &kp U   &kp I          &kp O    &kp P     &kp MINUS
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D         &kp F         &kp G                          &kp H   &kp J   &kp K          &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT    &kp Z   &kp X   &kp C         &kp V         &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                                  &kp LEFT_GUI  &kp LEFT_ALT  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &kp RIGHT_GUI
+            >;
+        };
+
+        Gaming {
+            display-name = "Gaming";
+            bindings = <
+&kp ESC           &kp N1  &kp N2  &kp N3        &kp N4        &kp N5                                   &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB           &kp Q   &kp W   &kp E         &kp R         &kp T                                    &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D         &kp F         &kp G                                    &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C         &kp V         &kp B             &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp SPACE    &kp RET   &mo 4   &mo 5   &mo 3
             >;
         };
 
