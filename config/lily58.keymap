@@ -9,37 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+#include "features/accents.dtsi"
+#include "features/macros.dtsi"
+#include "features/combos.dtsi"
+
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        toggle_windows {
-            bindings = <&tog 1>;
-            key-positions = <52 55>;
-        };
-
-        gaming_trigger {
-            bindings = <&tog 2>;
-            key-positions = <0 11>;
-        };
-    };
-
-    macros {
-        arrow: arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GREATER_THAN>;
-            label = "ARROW";
-        };
-
-        equalsarrow: equalsarrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-            label = "EQUALSARROW";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +31,7 @@
 &lt 5 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_CONTROL  &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &kp RGUI
+                                  &kp LALT  &kp LGUI  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &mo 6
             >;
         };
 
@@ -119,7 +93,7 @@
             display-name = "Raise";
             bindings = <
 &arrow     &equalsarrow  &trans  &trans   &trans   &trans                     &trans       &trans          &trans        &trans           &trans    &trans
-&kp GRAVE  &kp N1        &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7          &kp N8        &kp N9           &kp N0    &trans
+&kp GRAVE  &ac_eacu         &kp N2  &kp N3   &kp N4   &kp N5                     &kp N6       &kp N7          &kp N8        &kp N9           &kp N0    &trans
 &kp F1     &kp F2        &kp F3  &kp F4   &kp F5   &kp F6                     &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans    &trans
 &kp F7     &kp F8        &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS       &kp EQUAL     &kp LBKT         &kp RBKT  &kp BSLH
                                  &trans   &trans   &trans   &trans    &trans  &trans       &trans          &trans
@@ -141,6 +115,24 @@
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans                       &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &trans          &trans          &trans           &trans  &trans  &trans       &trans  &trans    &trans        &trans        &trans     &trans  &trans
                                         &trans           &trans  &trans  &mkp LCLK    &trans  &trans    &trans        &trans
+            >;
+        };
+
+        Accents {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  à  |  á  |  ã  |  â  |     |     |               |     |     |     |     |     |     |
+            // |  é  |  ê  |     |     |     |     |               |     |     |     |     |     |     |
+            // |  í  |     |     |     |     |     |               |     |     |     |     |     |     |
+            // |  ó  |  õ  |  ô  |     |     |     |        |       |     |     |     |     |     |     |
+            //                    |      |      |      |      |      |      |      |      |
+
+            display-name = "Accents";
+            bindings = <
+&trans  &ac_agrv       &ac_aacu     &trans        &trans  &trans                       &trans    &trans        &trans        &trans     &trans  &trans
+&trans  &ac_eacu       &ac_egrv     &trans        &trans  &trans                       &arrow    &equalsarrow  &trans        &trans     &trans  &trans
+&trans  &trans       &trans     &trans        &trans  &trans                       &kp LEFT  &kp DOWN      &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans       &trans     &trans        &trans  &trans  &trans       &trans  &trans    &trans        &trans        &trans     &trans  &trans
+                             &trans           &trans  &trans  &mkp LCLK    &trans  &trans    &trans        &trans
             >;
         };
     };
