@@ -1,0 +1,191 @@
+layout: {zmk_keyboard: lily58}
+layers:
+  Macos:
+  - [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - - '0'
+    - BACKSPACE
+    - {t: TAB, h: Dev}
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+  - [I, O, P, '-', LEFT CONTROL, '&hml LCTRL A', '&hml LALT S', '&hml LGUI D', '&hml LSHFT F', G]
+  - [H, '&hmr RSHFT J', '&hmr LGUI K', '&hmr LALT L', '&hmr LCTRL SEMI', '''', LEFT SHIFT, Z, X, C]
+  - [V, B, '[', ']', N, M, ',', ., /, RSHFT]
+  - [LALT, LGUI, Lower, SPACE, RET, Raise, Dev, Dev]
+  Windows:
+  - [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - ['0', BACKSPACE, TAB, Q, W, E, R, T, Y, U]
+  - [I, O, P, '-', LEFT CONTROL, A, S, D, F, G]
+  - [H, J, K, L, ;, '''', LEFT SHIFT, Z, X, C]
+  - [V, B, '[', ']', N, M, ',', ., /, RSHFT]
+  - [LEFT GUI, LEFT ALT, Lower, SPACE, RET, Raise, Dev, RIGHT GUI]
+  Gaming:
+  - [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  - ['0', BACKSPACE, TAB, Q, W, E, R, T, Y, U]
+  - [I, O, P, '-', LEFT SHIFT, A, S, D, F, G]
+  - [H, J, K, L, ;, '''', LEFT CONTROL, Z, X, C]
+  - [V, B, '[', ']', N, M, ',', ., /, RSHFT]
+  - [LEFT GUI, LEFT ALT, LEFT CONTROL, SPACE, RET, Raise, Dev, Lower]
+  Lower:
+  - - BT CLR
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - PREVIOUS
+    - PLAY
+    - NEXT
+    - VOLUME DOWN
+  - [VOL UP, DEL, F1, F2, F3, F4, F5, F6, F7, F8]
+  - [F9, F10, F11, '=', '`', '!', '@', '#', $, '%']
+  - - ^
+    - '&'
+    - KP MULTIPLY
+    - (
+    - )
+    - '~'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - _
+    - KP PLUS
+    - '{'
+    - '}'
+    - '|'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - Gui+SPACE
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Raise:
+  - - '&arrow'
+    - '&equalsarrow'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '`'
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+  - - '8'
+    - '9'
+    - '0'
+    - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F4
+    - F5
+    - F6
+  - - LEFT
+    - DOWN ARROW
+    - UP ARROW
+    - RIGHT ARROW
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F7
+    - F8
+    - F9
+    - F10
+  - - F11
+    - F12
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - KP PLUS
+    - '-'
+    - '='
+    - '['
+    - ']'
+    - \
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Dev:
+  - - '&arrow'
+    - '&equalsarrow'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - '&mmv MOVE_UP'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&arrow'
+    - '&equalsarrow'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_RIGHT'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - LEFT
+    - DOWN
+    - UP ARROW
+    - RIGHT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&mkp LCLK'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
