@@ -1,0 +1,356 @@
+layout: {zmk_keyboard: lily58}
+layers:
+  Macos:
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - {t: Tab, h: Dev}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - LEFT CONTROL
+  - '&hml LCTRL A'
+  - '&hml LALT S'
+  - '&hml LGUI D'
+  - '&hml LSHFT F'
+  - G
+  - H
+  - '&hmr RSHFT J'
+  - '&hmr LGUI K'
+  - '&hmr LALT L'
+  - '&hmr LCTRL SEMI'
+  - ''''
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Shift
+  - Alt
+  - Gui
+  - Lower
+  - Spc
+  - Enter
+  - Raise
+  - Dev
+  - Dev
+  Windows:
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - Tab
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - LEFT CONTROL
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Shift
+  - LEFT GUI
+  - LEFT ALT
+  - Lower
+  - Spc
+  - Enter
+  - Raise
+  - Dev
+  - RIGHT GUI
+  Gaming:
+  - Esc
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - Tab
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '-'
+  - LEFT SHIFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LEFT CONTROL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Shift
+  - LEFT GUI
+  - LEFT ALT
+  - LEFT CONTROL
+  - Spc
+  - Enter
+  - Raise
+  - Dev
+  - Lower
+  Lower:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - {t: BT, h: '4'}
+  - PREVIOUS
+  - PLAY
+  - $$mdi:skip-forward$$
+  - VOLUME DOWN
+  - $$mdi:volume-high$$
+  - Del
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - '='
+  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - '~'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - _
+  - KP PLUS
+  - '{'
+  - '}'
+  - '|'
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - Gui+Spc
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  Raise:
+  - '&arrow'
+  - '&equalsarrow'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - ←
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - {type: trans}
+  - {type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {type: trans}
+  - {type: trans}
+  - KP PLUS
+  - '-'
+  - '='
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
+  - \
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  Dev:
+  - '&arrow'
+  - '&equalsarrow'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - Mouse ↑
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '&arrow'
+  - '&equalsarrow'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - {type: trans}
+  - {type: trans}
+  - ←
+  - ↓
+  - UP ARROW
+  - →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Left Click
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
