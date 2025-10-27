@@ -14,12 +14,18 @@
   default-mode = <UC_MODE_MACOS>;
 };
 
+&sk {
+  release-after-ms = <900>;
+  quick-release;
+};
+
 // define layers name with numbers
 #define MACOS 0
 #define WINDOWS 1
 #define GAMING 2
 #define LOWER 3
 #define RAISE 4
+#define ARROWS 5
 
 #include "features/macros.dtsi"
 #include "features/combos.dtsi"
@@ -32,7 +38,7 @@ ZMK_BASE_LAYER(MACOS,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B       ,   &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH    ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                                             &kp SPACE,    &kp RET
+                                                            &kp SPACE,      &kp RET
 //                                                        ╰─────────────╯ ╰─────────────╯
 )
 
@@ -62,7 +68,7 @@ ZMK_BASE_LAYER(LOWER,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5      ,   &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp GRAVE     &kp EXCL     &kp AT        &kp HASH      &kp DLLR    ,    &kp CARET    &kp AMPS     &kp STAR     &kp LPAR       &kp RPAR  ,
+    &hml LCTRL GRAVE     &hml LALT EXCL     &hml LGUI AT        &hml LSHFT HASH      &kp DLLR    ,    &kp CARET    &hmr RSHFT AMPS &hmr LGUI STAR  &hmr LALT LPAR  &hmr LCTRL RPAR  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp UNDER    &kp MINUS    &kp FSLH     &kp PIPE      &kp BSLH       ,   &kp PLUS     &kp EQUAL    &kp LBRC        &kp RBRC    &kp TILDE   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
@@ -73,10 +79,22 @@ ZMK_BASE_LAYER(RAISE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp F11       &kp F12       &kp PSCRN     &kp SLCK    &kp PAUSE_BREAK   ,   &kp INSERT    &kp HOME      &kp PAGE_UP   &kp DELETE    &kp END      ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp C_PREV &kp C_PP         &kp C_NEXT    &kp C_VOL_UP &kp C_VOL_DN ,    &kp LEFT     &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &trans     ,
+    &hml LCTRL C_PREV &hml LALT C_PP         &hml LGUI C_NEXT    &hml LSHFT C_VOL_UP &kp C_VOL_DN ,    &kp LEFT     &hmr RSHFT DOWN_ARROW &hmr LGUI UP_ARROW &hmr LALT RIGHT_ARROW &trans     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &arrow        &equalsarrow &trans       &trans       &trans         ,   &trans       &trans          &trans          &trans     &trans      ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                              &kp SPACE,    &kp RET
 //                                                        ╰─────────────╯ ╰─────────────╯
 )
+
+// Arrow keys on hjkl
+ZMK_BASE_LAYER(ARROWS,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &trans       &trans       &trans       &trans       &trans     ,     &trans       &trans       &trans       &trans       &trans     ,
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &trans       &trans       &trans       &trans       &trans     ,     &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    ,
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &trans       &trans       &trans       &trans       &trans     ,     &trans       &trans       &trans       &trans       &trans     ,
+// ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+                                                             &kp SPACE,    &kp RET
+  )

@@ -1,13 +1,10 @@
 name: Draw ZMK keymaps
 on:
   workflow_dispatch:  # can be triggered manually
-  # on push to main branch or pull requests targeting main branch
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - 'config/*.keymap'          # trigger on changes to keymap files
+      - 'keymap_drawer.config.yaml'  # trigger on changes to config file
 
 jobs:
   draw:
