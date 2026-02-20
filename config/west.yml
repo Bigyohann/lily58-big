@@ -1,4 +1,7 @@
 manifest:
+  defaults:
+    revision: v0.3 # Pin everything to v0.3
+
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
@@ -7,13 +10,17 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
       import: app/west.yml
     - name: zmk-helpers
       remote: urob
-      revision: main
     - name: zmk-unicode
       remote: urob
-      revision: main
+    - name: zmk-auto-layer
+      remote: urob
+    - name: zmk-tri-state
+      remote: urob
+    - name: zmk-adaptive-key
+      remote: urob
+
   self:
     path: config
