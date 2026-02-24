@@ -15,5 +15,15 @@ manifest:
     - name: zmk-unicode
       remote: urob
       revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main
+    - name: zmk-tri-state
+      remote: urob
+      revision: main
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: main
+
   self:
     path: config

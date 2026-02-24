@@ -1,10 +1,26 @@
+draw_config:
+  append_colon_to_layer_header: false
+  dark_mode: auto
+
 parse_config:
   zmk_additional_includes:
     - "modules/zmk/helpers/include"
 
   zmk_preamble: |
-    #include <zmk-helpers/key-labels/34.h>
+    #include <zmk-helpers/key-labels/lily58.h>
     #define CONFIG_WIRELESS
+
+  preprocess: true
+
+  skip_binding_parsing: false
+  
+  # Improve sticky/mod tap visualizations
+  sticky_label: "sticky"
+  toggle_label: "toggle"
+  tap_toggle_label: "tap-toggle"
+
+  trans_legend: {t: "▽", type: "trans"}
+  mark_alternate_layer_activators: true
 
   raw_binding_map:
     "&sys_reset": Reset
@@ -15,6 +31,7 @@ parse_config:
     "&bt BT_SEL 1": BT 2
     "&bt BT_SEL 2": BT 3
     "&bt BT_SEL 3": BT 4
+    "&bt BT_CLR": BT Clr
 
     "&kp LC(INS)": Copy
     "&kp LC(X)": Cut
@@ -56,12 +73,9 @@ parse_config:
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
 
-  trans_legend: { "t": "", "type": "trans" }
-
   zmk_combos:
     combo_cut: { align: bottom, o: 0.15 }
     combo_ldrsh: { align: top, o: 1.35 }
-
     combo_lt: { hidden: true }
     combo_gt: { hidden: true }
     combo_lbrc: { hidden: true }
@@ -78,12 +92,12 @@ parse_config:
     LSHFT: Shift
     RSHFT: Shift
 
-    BSPC: Bspc
-    DEL: Del
+    BSPC: ⌫
+    DEL: ⌦
     ESC: Esc
-    RET: Enter
-    SPACE: Spc
-    TAB: Tab
+    RET: ⏎
+    SPACE: ␣
+    TAB: ⇥
 
     PG_UP: PgUp
     PG_DN: PgDn
@@ -95,13 +109,21 @@ parse_config:
     DOWN: ↓
     LEFT: ←
     RIGHT: →
-
+    
+    # Custom glyphs for volume/media
     C_MUTE: $$mdi:volume-off$$
     C_PP: $$mdi:play-pause$$
-    C_VOL_UP: $$mdi:volume-high$$
-    C_VOL_DN: $$mdi:volume-medium$$
+    C_PLAY: $$mdi:play$$
+    C_PAUSE: $$mdi:pause$$
+    C_STOP: $$mdi:stop$$
     C_NEXT: $$mdi:skip-forward$$
     C_PREV: $$mdi:skip-backward$$
+    C_PREVIOUS: $$mdi:skip-backward$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-medium$$
+    C_VOLUME_DOWN: $$mdi:volume-medium$$
+    C_BRI_UP: $$mdi:brightness-7$$
+    C_BRI_DN: $$mdi:brightness-5$$
 
     # defaults
     AMPERSAND: "&"
@@ -168,7 +190,3 @@ parse_config:
     TILDE2: "~"
     UNDER: _
     UNDERSCORE: _
-
-draw_config:
-  append_colon_to_layer_header: false
-  dark_mode: auto

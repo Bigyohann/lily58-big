@@ -4,14 +4,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GREATER_THAN>;
-            label = "ARROW";
         };
 
         equalsarrow: equalsarrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
-            label = "EQUALSARROW";
         };
     };
 };
+
+
