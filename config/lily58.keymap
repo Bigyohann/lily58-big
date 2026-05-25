@@ -80,7 +80,7 @@ ZMK_TAP_DANCE(copy_cut, bindings = <&kp LC(INS)>, <&kp LC(X)>;
 &lt 5 TAB         &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U   &kp I      &kp O    &kp P     &kp MINUS
 &kp LEFT_CONTROL  &hml LCTRL A     &hml LALT S  &hml LGUI D  &hml LSHFT F   &kp G                          &kp H   &hmr RSHFT J  &hmr LGUI K  &hmr LALT L   &hmr LCTRL SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &magic_shift LSHFT 0
+                                  &kp LALT  &kp LC(LS(LA(LGUI)))  &mo 3   &kp SPACE    &kp RET   &mo 4   &mo 5   &magic_shift LSHFT 0
             >;
         };
 
